@@ -10,8 +10,6 @@ import { App } from "./src/App";
 
 const app = express();
 
-global.window = {};
-
 app.use(express.static("./build", { index: false }));
 
 const articles = [
